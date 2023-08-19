@@ -1,0 +1,110 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+header {
+	padding: 1.5em 0;
+	border-bottom: 1px solid #ddd;
+}
+
+nav {
+	margin: auto;
+	width: 50%;
+	max-width: 1440px;
+}
+
+
+main {
+	margin: auto;
+	width: 50%;
+	max-width: 1440px;
+
+}
+
+article {
+	margin: 5em 0;
+	display: flex;
+}
+
+img {
+	width: 100%;
+	
+}
+
+.profile-images {
+	margin: auto;
+	width: 30%;
+	margin: 0 1em;
+}
+
+.text-description {
+	width: 35%;
+}
+
+
+.facebook-icons {
+	width: 25px;
+}
+
+.bio-photo {
+	padding: .15em;
+	border-radius: 50%;
+	border: 1px solid #ddd;
+}
+
+.social-media-links {
+	display: flex;
+}
+
+.icons {
+	margin-right: .5em;
+}
+
+
+/* Typograph */
+
+h4 {
+	font-size: 1rem;
+	font-weight: 600;
+	margin: .35em 0;
+}
+
+
+h3 {
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+p {
+	margin-top: .35em;
+	font-size: 1rem;
+	line-height: 1.4em;
+}
+
+footer {
+	border-top: 1px solid #ddd;
+	padding: 1.5em 0;
+}
+
+.sweet-note {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+ul {
+	display: flex;
+}
+
+ul li {
+	margin-left: 1em;
+}
