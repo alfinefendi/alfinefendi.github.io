@@ -83,12 +83,12 @@ main h3 {
 }
 
 .bio-photo {
-	object-fit: cover;
-	object-position: 0 -22px;
-	width: 100px;
-	height: 100px;
-	margin-bottom: 1em;
-	border-radius: 10px;
+   object-fit: cover;
+   object-position: 0 -22px;
+   width: 100px;
+   height: 100px;
+   margin-bottom: 1em;
+   border-radius: 10px;
 }
 
 
