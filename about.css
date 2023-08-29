@@ -30,16 +30,18 @@ nav {
 
 #nav-recent {
     font-weight: 700;
+    color: #427cd3;
 }
 
 nav .title {
     margin: 0;
 }
 
-nav h4 {
-    color: #111;
-    font-size: .9rem;
-    font-weight: 600;
+
+
+.profile .mybio {
+    color: #093d79;
+    text-decoration: underline;
 }
 
 nav ul {

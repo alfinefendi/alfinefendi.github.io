@@ -30,6 +30,7 @@ nav {
 
 #nav-recent {
     font-weight: 700;
+    color: #427cd3;
 }
 
 nav .title {
@@ -37,9 +38,9 @@ nav .title {
 }
 
 nav h4 {
-    color: #111;
-    font-size: .9rem;
-    font-weight: 600;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 
 nav ul {
@@ -80,6 +81,7 @@ main h2 {
 main h3 {
     font-size: 1.25rem;
     font-weight: 600;
+    color: #427cd3;
 }
 
 .bio-photo {

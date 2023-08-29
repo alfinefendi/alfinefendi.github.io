@@ -6,6 +6,7 @@
     list-style-type: none;
     font-size: unset;
     color: inherit;
+  
 }
 
 body {
@@ -30,16 +31,11 @@ nav {
 
 #nav-recent {
     font-weight: 700;
+    color: #427cd3;
 }
 
 nav .title {
     margin: 0;
-}
-
-nav h4 {
-    color: #111;
-    font-size: .9rem;
-    font-weight: 600;
 }
 
 nav ul {
@@ -80,6 +76,7 @@ main h2 {
 main h3 {
     font-size: 1.25rem;
     font-weight: 600;
+    color: #427cd3;
 }
 
 .bio-photo {
