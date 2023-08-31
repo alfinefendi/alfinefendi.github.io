@@ -6,10 +6,11 @@
     list-style-type: none;
     font-size: unset;
     color: inherit;
+  
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     font-size: 1rem;
 
 }
@@ -19,13 +20,14 @@ body {
     max-width: 1100px;
 }
 
+
 nav {
     margin: 3em auto;
-    width: 90%;
-    flex-direction: column;
-    align-items: first baseline;
-    padding-bottom: .5em;
-    border-bottom: 1px solid #ddd;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 #nav-recent {
@@ -34,14 +36,15 @@ nav {
 }
 
 nav .title {
-    margin: 0;
+    margin-right: 3em;
 }
 
-nav h4 {
-    color: #333;
-    font-size: 1.2rem;
-    font-weight: 500;
-}
+    nav h4 {
+        color: #333;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    
 
 nav ul {
     display: flex;
@@ -50,13 +53,13 @@ nav ul {
 
 nav li {
     margin: 0;
-    margin-right: 1em;
+    margin-right: 3em;
 }
 
 nav li a {
-    font-size: .75rem;
+    font-size: 1.05rem;
     color: #333;
-    font-weight: 500;
+    font-weight: 500
 }
 
 nav li a:hover {
@@ -65,9 +68,16 @@ nav li a:hover {
 }
 
 main {
-    margin: 2em auto;
-    width: 90%;
+    margin: 12em auto;
+    width: 70%;
 }
+
+main p {
+    margin: 1em 0;
+    font-size: 1.15rem;
+    line-height: 1.5em;
+}
+
 
 main h2 {
     margin: 0;
@@ -79,12 +89,16 @@ main h2 {
 }
 
 main h3 {
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     font-weight: 600;
+    color: #427cd3;
 }
 
 .bio-photo {
+    object-fit: cover;
+    object-position: 0 -22px;
 	width: 100px;
+    height: 100px;
     margin-bottom: 1em;
 	border-radius: 10px;
 }
@@ -105,16 +119,11 @@ span {
     margin: 0;
     padding: 0;
     background-color: transparent;
-    font-size: .5rem;
+    font-size: 1rem;
     font-weight: 500;
     color: #333;
 }
 
-main p {
-    margin: 1em 0;
-    font-size: 1rem;
-    line-height: 1.5em;
-}
 
 article {
     margin: auto;
@@ -122,10 +131,12 @@ article {
     margin-bottom: 7em;
 }
 
+
 section {
     width: 100%;
     margin: auto;
     margin-bottom: 10em;
+  
 }
 
 section a:hover {
@@ -146,35 +157,26 @@ footer p {
     font-size: .75rem;
 }
 
+@media (max-width: 500px) {
 
+    
+nav {
+    margin: 3em auto;
+    width: 90%;
+    flex-direction: column;
+    align-items: first baseline;
+    padding-bottom: .5em;
 
-
-
-
-@media (min-width: 1200px)  {
-
-
-.container {
-    margin: auto;
-    max-width: 1100px;
 }
 
-nav {
-        margin: 3em auto;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-start;
-    }
     
 nav .title {
-        margin-right: 3em;
+        margin-right: 0;
     }
     
     nav h4 {
         color: #333;
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: 500;
     }
     
@@ -184,79 +186,79 @@ nav .title {
     }
     
     nav li {
-          margin-right: 3em;
+          margin-right: 1em;
     }
     
     nav li a {
-        font-size: 1.05rem;
+        font-size: .75rem;
         color: #333;
-        font-weight: 500;
+        font-weight: 600;
     }
     
     main {
-        margin: 12em auto;
-        width: 70%;
+        margin: 5em auto;
+        width: 90%;
     }
-    
-    main h2 {
+
+    main p {
         margin: 1em 0;
-        font-size: 4rem;
-        line-height: 1.2em;
-        
+        font-size: 1rem;
+        line-height: 1.5em;
     }
     
     main h3 {
         margin: 1em 0;
-        font-size: 1.75rem;
-    }
-    
-    .date-published {
-        margin: 3em 0;
+        font-size: 1.2rem;
     }
     
     span {
+        font-size: .8rem;
+    }
+    
+
+
+    
+
+
+}
+
+
+
+
+
+@media (min-width: 500px) and (max-width: 900px)  {
+
+    nav {
+        width: 80%;
+        justify-content: flex-start;
+    }
+
+    main {
+        width: 80%;
+    }
+
+    main p {
+        font-size: 1.05rem;
+    }
+
+}
+
+
+@media (min-width: 900px) and (max-width: 1200px)  {
+
+
+    nav {
+        margin-left: 2em;
+        justify-content: flex-start;
+    }
+
+    main {
+        padding-left: 2.1em;
+    }
+
+    main p {
         font-size: 1rem;
     }
-    
-    main p {
-        margin: 1em 0;
-        font-size: 1.2rem;
-        line-height: 1.5em;
-    }
-    
-    article {
-        margin: auto;
-        margin-top: 3em;
-        margin-bottom: 7em;
-    }
-    
-    section {
-        width: 100%;
-        margin: auto;
-        margin-bottom: 10em;
-    }
-    
-    section iframe {
-        object-fit: cover;
-        width: 100%;
-    }
-    
-    footer {
-        margin: 5em 0;
-    }
-    
-    
-    
-    .bio-photo {
-        width: 100px;
-        margin-bottom: 1em;
-        border-radius: 10px;
-    }
-    
-    
-    img {
-        width: 100%;
-    }
-    
+
 }
 
