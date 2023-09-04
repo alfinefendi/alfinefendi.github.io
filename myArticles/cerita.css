@@ -30,6 +30,19 @@ nav {
     justify-content: flex-start;
 }
 
+.menu {
+    cursor: pointer;
+    display: none;
+}
+
+.slash {
+    width: 15px;
+    height: 2px;
+    background-color: #333;
+    margin-bottom: 3px;
+}
+
+
 #nav-recent {
     font-weight: 700;
     color: #427cd3;
@@ -131,6 +144,9 @@ article {
     margin-bottom: 7em;
 }
 
+.next-page {
+    text-decoration: underline;
+}
 
 section {
     display: flex;
@@ -172,33 +188,78 @@ figcaption {
 @media (max-width: 500px) {
 
     
-nav {
-    margin: 3em auto;
-    width: 90%;
-    flex-direction: column;
-    align-items: first baseline;
-    padding-bottom: .5em;
-
-}
-
-    
-nav .title {
-        margin-right: 0;
-    }
-    
-    nav h4 {
-        color: #333;
-        font-size: 1rem;
-        font-weight: 500;
-    }
-    
-    nav ul {
-        display: flex;
+    nav {
+        margin: 3em auto;
+        width: 90%;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
+        padding-bottom: .5em;
+    
     }
+    
+        
+    nav .title {
+            margin-right: 0;
+        }
+        
+        nav h4 {
+            color: #333;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+    
+        .menu {
+            display: block;
+            padding: .5em;
+          
+        }
+    
+        .slash {
+            transition: 0.4s;
+        }
+    
+        .nav-bar {
+            width: 100%;
+            position: relative;
+            top: 0;
+            transform: translateX(60%);
+            background-color: #ebebeb;
+            width: 30%;
+            padding: 1em;
+            transition: .5s;
+            opacity: 0;
+        }
+    
+        .nav-bar.active {
+            top: 10vh;
+            margin-bottom: 1em;
+            opacity: 1;
+           
+        }
+    
+        .menu.active {
+            position: relative;
+            background-color: #427cd3;
+            border-radius: 50%;
+            
+        }
+    
+        .slash.active {
+            transform: scale(.85);
+            background-color: #ffffff;
+        }
+        
+        nav ul {
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
+        }
+    
+    
     
     nav li {
-          margin-right: 1em;
+          margin-right: 0;
     }
     
     nav li a {

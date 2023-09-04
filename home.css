@@ -12,6 +12,7 @@
 body {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 1rem;
+    overflow-x: hidden;
 
 }
 
@@ -28,6 +29,18 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
+}
+
+.menu {
+    cursor: pointer;
+    display: none;
+}
+
+.slash {
+    width: 15px;
+    height: 2px;
+    background-color: #333;
+    margin-bottom: 3px;
 }
 
 #nav-recent {
@@ -163,8 +176,9 @@ footer p {
 nav {
     margin: 3em auto;
     width: 90%;
-    flex-direction: column;
-    align-items: first baseline;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     padding-bottom: .5em;
 
 }
@@ -179,18 +193,63 @@ nav .title {
         font-size: 1rem;
         font-weight: 500;
     }
+
+    .menu {
+        display: block;
+        padding: .5em;
+      
+    }
+
+    .slash {
+        transition: 0.4s;
+    }
+
+    .nav-bar {
+        width: 100%;
+        position: relative;
+        top: 0;
+        transform: translateX(60%);
+        background-color: #ebebeb;
+        width: 30%;
+        padding: 1em;
+        transition: .5s;
+        opacity: 0;
+    }
+
+    .nav-bar.active {
+        top: 10vh;
+        margin-bottom: 1em;
+        opacity: 1;
+       
+    }
+
+    .menu.active {
+        position: relative;
+        background-color: #427cd3;
+        border-radius: 50%;
+        
+    }
+
+    .slash.active {
+        transform: scale(.85);
+        background-color: #ffffff;
+    }
     
     nav ul {
         display: flex;
-        align-items: center;
+        align-items: flex-end;
+        flex-direction: column;
     }
+
+
     
     nav li {
-          margin-right: 1em;
+    
+        margin-right: 0;
     }
     
     nav li a {
-        font-size: .75rem;
+        font-size: 1rem;
         color: #333;
         font-weight: 600;
     }
