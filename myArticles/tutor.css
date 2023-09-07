@@ -150,12 +150,34 @@ article {
 
 section {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     width: 100%;
     margin: auto;
     margin-bottom: 10em;
   
 }
 
+section li {
+    font-size: 1rem;
+}
+section li h4 {
+    font-size: 1.1rem;
+}
+
+
+.column {
+    width: 30%;
+}
+
+
+.indentation {
+    padding-left: .5em;
+}
+
+.note {
+    font-size: .95rem;
+}
 section a:hover {
     color: #808080;
     text-decoration: underline;
@@ -286,6 +308,32 @@ figcaption {
     span {
         font-size: .8rem;
     }
+
+    section {
+        flex-direction: column;
+        margin-bottom: 2em;
+      
+    }
+    
+    section li {
+        font-size: 1rem;
+    }
+    section li h4 {
+        font-size: 1.1rem;
+        margin: 1em 0;
+    }
+    
+    
+    .column {
+        width: 90%;
+        margin: 1em 0;
+    }
+    
+    
+    .indentation {
+        padding-left: .5em;
+    }
+    
     
 
 
