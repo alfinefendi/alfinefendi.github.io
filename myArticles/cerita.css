@@ -17,7 +17,12 @@ body {
 
 .container {
     margin: auto;
+    width: 80%;
     max-width: 1100px;
+}
+
+.flex {
+    width: 80%;
 }
 
 
@@ -80,10 +85,6 @@ nav li a:hover {
     text-decoration: underline;
 }
 
-main {
-    margin: 12em auto;
-    width: 70%;
-}
 
 main p {
     margin: 1em 0;
@@ -185,8 +186,22 @@ figcaption {
 }
 
 
+
 @media (max-width: 500px) {
 
+    .container {
+        width: 100%;
+    }
+    
+    .main {
+        width: 100%;
+      
+    }
+    
+    .flex {
+        width: 80%;
+        padding: 0;
+    }
     
     nav {
         margin: 3em auto;
@@ -200,7 +215,8 @@ figcaption {
     
         
     nav .title {
-            margin-right: 0;
+        width: 100%;
+        margin-right: 0;
         }
         
         nav h4 {
@@ -210,7 +226,7 @@ figcaption {
         }
     
         .menu {
-            display: block;
+            display: inline-block;
             padding: .5em;
           
         }
@@ -223,9 +239,9 @@ figcaption {
             width: 100%;
             position: relative;
             top: 0;
-            transform: translateX(60%);
+            right: 0;
             background-color: #ebebeb;
-            width: 30%;
+            width: 10%;
             padding: 1em;
             transition: .5s;
             opacity: 0;
@@ -299,6 +315,8 @@ figcaption {
 
 
 
+
+
 @media (min-width: 500px) and (max-width: 900px)  {
 
     nav {
@@ -306,13 +324,17 @@ figcaption {
         justify-content: flex-start;
     }
 
-    main {
+    .container {
+        width: 100%;
+    }
+    .flex {
         width: 80%;
     }
 
     main p {
-        font-size: 1.05rem;
+        font-size: 1rem;
     }
+
 
 }
 
@@ -321,13 +343,9 @@ figcaption {
 
 
     nav {
-        margin-left: 2em;
         justify-content: flex-start;
     }
 
-    main {
-        padding-left: 2.1em;
-    }
 
     main p {
         font-size: 1rem;

@@ -17,7 +17,12 @@ body {
 
 .container {
     margin: auto;
+    width: 80%;
     max-width: 1100px;
+}
+
+.flex {
+    width: 80%;
 }
 
 
@@ -80,10 +85,6 @@ nav li a:hover {
     text-decoration: underline;
 }
 
-main {
-    margin: 12em auto;
-    width: 70%;
-}
 
 main p {
     margin: 1em 0;
@@ -205,9 +206,21 @@ figcaption {
     margin: 1em 0;
 }
 
-
 @media (max-width: 500px) {
 
+    .container {
+        width: 100%;
+    }
+    
+    .main {
+        width: 100%;
+      
+    }
+    
+    .flex {
+        width: 80%;
+        padding: 0;
+    }
     
     nav {
         margin: 3em auto;
@@ -221,7 +234,8 @@ figcaption {
     
         
     nav .title {
-            margin-right: 0;
+        width: 100%;
+        margin-right: 0;
         }
         
         nav h4 {
@@ -231,7 +245,7 @@ figcaption {
         }
     
         .menu {
-            display: block;
+            display: inline-block;
             padding: .5em;
           
         }
@@ -244,9 +258,9 @@ figcaption {
             width: 100%;
             position: relative;
             top: 0;
-            transform: translateX(60%);
+            right: 0;
             background-color: #ebebeb;
-            width: 30%;
+            width: 10%;
             padding: 1em;
             transition: .5s;
             opacity: 0;
@@ -308,32 +322,6 @@ figcaption {
     span {
         font-size: .8rem;
     }
-
-    section {
-        flex-direction: column;
-        margin-bottom: 2em;
-      
-    }
-    
-    section li {
-        font-size: 1rem;
-    }
-    section li h4 {
-        font-size: 1.1rem;
-        margin: 1em 0;
-    }
-    
-    
-    .column {
-        width: 90%;
-        margin: 1em 0;
-    }
-    
-    
-    .indentation {
-        padding-left: .5em;
-    }
-    
     
 
 
@@ -341,6 +329,8 @@ figcaption {
 
 
 }
+
+
 
 
 
@@ -353,13 +343,17 @@ figcaption {
         justify-content: flex-start;
     }
 
-    main {
+    .container {
+        width: 100%;
+    }
+    .flex {
         width: 80%;
     }
 
     main p {
-        font-size: 1.05rem;
+        font-size: 1rem;
     }
+
 
 }
 
@@ -368,13 +362,9 @@ figcaption {
 
 
     nav {
-        margin-left: 2em;
         justify-content: flex-start;
     }
 
-    main {
-        padding-left: 2.1em;
-    }
 
     main p {
         font-size: 1rem;

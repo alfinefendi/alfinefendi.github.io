@@ -15,11 +15,18 @@ body {
 
 }
 
+
+
 .container {
     margin: auto;
+    width: 50%;
     max-width: 1100px;
 }
 
+.flex {
+    width: 50%;
+    padding-left: 9em;
+}
 
 nav {
     margin: 3em auto;
@@ -77,11 +84,6 @@ nav li a {
 nav li a:hover {
     color: #808080;
     text-decoration: underline;
-}
-
-main {
-    margin: 12em auto;
-    width: 70%;
 }
 
 main p {
@@ -176,50 +178,64 @@ footer p {
 
 @media (max-width: 500px) {
 
+   
+.container {
+    width: 100%;
+}
+
+.main {
+    width: 100%;
+  
+}
+
+.flex {
+    width: 80%;
+    padding: 0;
+}
+
+nav {
+    margin: 3em auto;
+    width: 90%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: .5em;
+
+}
+
     
-    nav {
-        margin: 3em auto;
-        width: 90%;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding-bottom: .5em;
-    
+nav .title {
+    width: 100%;
+    margin-right: 0;
     }
     
-        
-    nav .title {
-            margin-right: 0;
-        }
-        
-        nav h4 {
-            color: #333;
-            font-size: 1rem;
-            font-weight: 500;
-        }
-    
-        .menu {
-            display: block;
-            padding: .5em;
-          
-        }
-    
-        .slash {
-            transition: 0.4s;
-        }
-    
-        .nav-bar {
-            width: 100%;
-            position: relative;
-            top: 0;
-            transform: translateX(60%);
-            background-color: #ebebeb;
-            width: 30%;
-            padding: 1em;
-            transition: .5s;
-            opacity: 0;
-        }
-    
+    nav h4 {
+        color: #333;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .menu {
+        display: inline-block;
+        padding: .5em;
+      
+    }
+
+    .slash {
+        transition: 0.4s;
+    }
+
+    .nav-bar {
+        width: 100%;
+        position: relative;
+        top: 0;
+        right: 0;
+        background-color: #ebebeb;
+        width: 10%;
+        padding: 1em;
+        transition: .5s;
+        opacity: 0;
+    }
         .nav-bar.active {
             top: 10vh;
             margin-bottom: 1em;
@@ -287,7 +303,6 @@ footer p {
 
 
 
-
 @media (min-width: 500px) and (max-width: 900px)  {
 
     nav {
@@ -295,13 +310,17 @@ footer p {
         justify-content: flex-start;
     }
 
-    main {
+    .container {
+        width: 100%;
+    }
+    .flex {
         width: 80%;
     }
 
     main p {
-        font-size: 1.05rem;
+        font-size: 1rem;
     }
+
 
 }
 
@@ -310,13 +329,9 @@ footer p {
 
 
     nav {
-        margin-left: 2em;
         justify-content: flex-start;
     }
 
-    main {
-        padding-left: 2.1em;
-    }
 
     main p {
         font-size: 1rem;
