@@ -330,7 +330,7 @@ nav li a {
 
 .home-title {
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .home-paragraph {
@@ -346,11 +346,6 @@ nav li a {
     width: 60%;
 }
 
-.home-features-portals {
-    width: 30%;
-    margin: 2em auto;
-
-}
 
 .features-title {
     font-size: 1rem;
@@ -451,9 +446,6 @@ nav li a {
     margin-bottom: 30px;
 }
 
-.parentals-paragraph-subtitle {
-    font-size: 1.2rem;
-}
 
 /* features bottom */
 
@@ -613,3 +605,231 @@ nav li a {
     width: 140px;
     filter: grayscale(.5);
 }
+
+/* mobile */
+
+@media (max-width: 500px) {
+
+    nav {
+        text-align: center;
+    }
+    nav ul{
+        display: none;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .main-hero {
+        width: 90%;
+        padding: 3em 0;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-paragraph {
+        font-size: 1rem;
+    }
+
+    .option-field {
+        width: 90%;
+        padding: 1em 0;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .download-btn {
+        margin-top: 5px;
+        padding: 20px 10px;
+    }
+
+    .value-btn {
+        width: 102px;
+        margin: 5px 0;
+        font-size: .9rem;
+    }
+
+    .greetings-introduction {
+        width: 90%;
+        padding: 3em 0;
+    }
+    .greetings-title {
+        font-size: 1.2rem;
+        
+    }
+
+    .greetings-paragraph {
+        font-size: .8rem;
+   
+    }
+
+    .portal-wraper {
+        flex-direction: column;
+    }
+
+    .portals-title {
+        font-size: 1.2rem;
+        
+    }
+    .portals {
+        width: 90%;
+        margin: 0 auto;
+        padding: 3em 0;
+    }
+
+    .appcenter-preview {
+        width: 90%;
+        flex-direction: column;
+        padding: 3em 0;
+    }
+
+    .preview-description {
+        font-size: .9rem;
+    }
+
+    .greetings-home {
+        width: 90%;
+        padding: 3em 0;
+    }
+
+    .home-features-wraper {
+        width: 90%;
+        margin: 0 auto;
+        padding: 1em 0;
+    }
+
+    .home-features-portals {
+        margin: 0 auto;
+    }
+
+    .home-title {
+        font-size: 1.2rem;
+    }
+
+    .home-paragraph {
+        font-size: .9rem;
+    }
+
+    .home-features-portals {
+        width: 30%;
+        margin: 2em auto;
+
+    }
+
+    .features-title {
+        font-size: .9rem;
+        margin: 10px 0;
+
+    }
+
+    .features-paragraph {
+        font-size: .8rem;
+    
+    }
+
+
+    .greetings-apps {
+        width: 90%;
+        padding: 3em 0;
+    }
+
+    .apps-title {
+        font-size: 1.2rem;
+    }
+    .apps-paragraph {
+        font-size: .9rem;
+    }
+
+
+    .linebreak-icon {
+        margin: 20px auto;
+        justify-content: space-evenly;
+    }
+
+    .apps-icon {
+        width: 40px;;
+    }
+
+    .parentals-preview {
+        width: 90%;
+        flex-direction: column;
+        padding: 3em 0;
+    }
+
+    .parentals-title {
+        font-size: 1.3rem;
+    }
+
+    .parentals-paragraph-subtitle {
+        font-size: 1rem;    }
+
+    .parentals-paragraph {
+        font-size: .9rem;
+    }
+
+    .open-source-wraper {
+        width: 90%;
+        padding: 3em 0;
+        text-align: left;
+    }
+
+    .shortcut-preview {
+        width: 90%;
+        flex-direction: column;
+        padding: 3em 0;
+    }
+
+    .greetings-privacy {
+        width: 90%;
+        padding: 3em 0;
+    }
+
+    .privacy-features-wraper {
+        width: 90%;
+        padding: 3em 0;
+    }
+
+    .privacy-features-portals {
+        margin: 0 auto;
+    }
+
+    .privacy-title {
+        font-size: 2rem;
+        color: #fff;
+        margin: 1em 0;
+    }
+
+    .privacy-paragraph {
+        font-size: .9rem;
+        
+    }
+
+    .greetings-supports {
+        width: 90%;
+        padding: 3em 0;
+    }
+    .support-title {
+        font-size: 2rem;
+    }
+
+    .support-paragraph {
+        font-size: .9rem;
+        font-weight: 300;
+        margin-bottom: 10px;
+    }
+
+    .logo-company {
+        width: 120px;
+    }
+
+
+    .supporters {
+        width: 90%;
+        padding: 3em 0;
+    }
+    .company-reviews {
+        width: 110px;
+    }
+}
+
