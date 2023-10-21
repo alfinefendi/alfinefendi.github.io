@@ -346,6 +346,11 @@ nav li a {
     width: 60%;
 }
 
+.home-features-portals {
+    margin: 5px;
+}   
+
+
 
 .features-title {
     font-size: 1rem;
@@ -608,7 +613,9 @@ nav li a {
 
 /* mobile */
 
-@media (max-width: 500px) {
+
+
+@media (min-width: 500px) and (max-width: 1000px) {
 
     nav {
         text-align: center;
@@ -833,3 +840,14 @@ nav li a {
     }
 }
 
+@media (min-width: 1000px) and (max-width: 1600px) {
+
+    .option-field {
+        align-items: flex-start;
+        text-align: left;
+        flex-direction: column;
+    }
+
+    
+
+}
