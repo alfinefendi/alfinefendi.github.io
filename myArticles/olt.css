@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: unset;
+    color: inherit;
+  
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+
+}
+
+
+.container {
+    margin: auto;
+    width: 80%;
+    max-width: 1100px;
+}
+
+.flex {
+    width: 80%;
+}
+
+
+
+nav {
+    margin: 3em auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.menu {
+    cursor: pointer;
+    display: none;
+}
+
+.slash {
+    width: 15px;
+    height: 2px;
+    background-color: #333;
+    margin-bottom: 3px;
+}
+
+
+#nav-recent {
+    font-weight: 700;
+    color: #427cd3;
+}
+
+nav .title {
+    margin-right: 3em;
+}
+
+    nav h4 {
+        color: #333;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    margin: 0;
+    margin-right: 3em;
+}
+
+nav li a {
+    font-size: 1.05rem;
+    color: #333;
+    font-weight: 500
+}
+
+nav li a:hover {
+    color: #808080;
+    text-decoration: underline;
+}
+
+
+main p {
+    margin: 1em 0;
+    font-size: 1.15rem;
+    line-height: 1.5em;
+}
+
+
+main h2 {
+    margin: 0;
+    font-weight: 700;
+    padding-top: 1em;
+    font-size: 1.75rem;
+    line-height: 1.2em;
+    
+}
+
+main h3 {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #427cd3;
+}
+
+.bio-photo {
+    object-fit: cover;
+    object-position: 0 -22px;
+	width: 100px;
+    height: 100px;
+    margin-bottom: 1em;
+	border-radius: 10px;
+}
+
+
+img {
+	width: 100%;
+}
+
+
+.date-published {
+    margin: 0;
+    margin-bottom: 2em;
+}
+
+
+span {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+}
+
+
+article {
+    margin: auto;
+    margin-top: 3em;
+    margin-bottom: 7em;
+}
+
+
+section {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10em;
+  
+}
+
+section a:hover {
+    color: #808080;
+    text-decoration: underline;
+}
+
+section iframe {
+    object-fit: cover;
+    width: 100%;
+}
+
+footer {
+    margin: 0;
+}
+
+footer p {
+    font-size: .75rem;
+}
+
+@media (max-width: 500px) {
+
+    .container {
+        width: 100%;
+    }
+    
+    .main {
+        width: 100%;
+      
+    }
+    
+    .flex {
+        width: 80%;
+        padding: 0;
+    }
+    
+    nav {
+        margin: 3em auto;
+        width: 90%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: .5em;
+    
+    }
+    
+        
+    nav .title {
+        width: 100%;
+        margin-right: 0;
+        }
+        
+        nav h4 {
+            color: #333;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+    
+        .menu {
+            display: inline-block;
+            padding: .5em;
+          
+        }
+    
+        .slash {
+            transition: 0.4s;
+        }
+    
+        .nav-bar {
+            width: 100%;
+            position: relative;
+            top: 0;
+            right: 0;
+            background-color: #ebebeb;
+            width: 10%;
+            padding: 1em;
+            transition: .5s;
+            opacity: 0;
+        }
+    
+        .nav-bar.active {
+            top: 10vh;
+            margin-bottom: 1em;
+            opacity: 1;
+           
+        }
+    
+        .menu.active {
+            position: relative;
+            background-color: #427cd3;
+            border-radius: 50%;
+            
+        }
+    
+        .slash.active {
+            transform: scale(.85);
+            background-color: #ffffff;
+        }
+        
+        nav ul {
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
+        }
+    
+    
+    
+    nav li {
+          margin-right: 0;
+    }
+    
+    nav li a {
+        font-size: .75rem;
+        color: #333;
+        font-weight: 600;
+    }
+    
+    main {
+        margin: 5em auto;
+        width: 90%;
+    }
+
+    main p {
+        margin: 1em 0;
+        font-size: 1rem;
+        line-height: 1.5em;
+    }
+    
+    main h3 {
+        margin: 1em 0;
+        font-size: 1.2rem;
+    }
+    
+    span {
+        font-size: .8rem;
+    }
+    
+
+
+    
+
+
+}
+
+
+
+
+
+
+
+@media (min-width: 500px) and (max-width: 900px)  {
+
+    nav {
+        width: 80%;
+        justify-content: flex-start;
+    }
+
+    .container {
+        width: 100%;
+    }
+    .flex {
+        width: 80%;
+    }
+
+    main p {
+        font-size: 1rem;
+    }
+
+
+}
+
+
+@media (min-width: 900px) and (max-width: 1200px)  {
+
+
+    nav {
+        justify-content: flex-start;
+    }
+
+
+    main p {
+        font-size: 1rem;
+    }
+
+}
+
