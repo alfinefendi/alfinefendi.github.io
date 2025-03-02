@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: unset;
+    color: inherit;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+
+}
+
+
+.container {
+    margin: auto;
+    max-width: 1100px;
+}
+
+nav {
+    margin: 3em auto;
+    width: 90%;
+    flex-direction: column;
+    align-items: first baseline;
+    padding-bottom: .5em;
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+#nav-recent {
+    font-weight: 700;
+    color: #427cd3;
+}
+nav .title {
+    margin: 0;
+}
+
+nav h4 {
+    color: #333;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    margin: 0;
+    margin-right: 1em;
+}
+
+nav li a {
+    font-size: .75rem;
+    color: #333;
+    font-weight: 500;
+}
+
+nav li a:hover {
+    color: #808080;
+    text-decoration: underline;
+}
+
+
+main {
+	margin: auto;
+	width: 90%;
+	max-width: 1440px;
+
+}
+
+
+main h4 {
+    font-size: 1rem;
+    font-weight: 600;
+   
+}
+
+
+
+article {
+	margin: 5em 0;
+	display: flex;
+	flex-direction: column;
+}
+
+img {
+	width: 100%;
+	
+}
+
+/* 3 inti items */
+
+.profile-images {
+	margin: auto;
+	width: 40%;
+	margin: 2em;
+}
+
+.text-description {
+	width: 90%;
+}
+
+.bio-photo {
+	padding: .15em;
+	border-radius: 50%;
+	border: 1px solid #ddd;
+}
+
+
+
+/* Typograph */
+
+
+
+/* footer */
+
+footer {
+	padding: 1.5em 0;
+}
+
+.sweet-note {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.social-media-links {
+	display: flex;
+}
+
+
+.facebook-icons {
+	width: 20px;
+}
+
+.icons {
+	margin-right: .5em;
+}
+
+@media (min-width: 1200px) {
+
+	
+
+.container {
+    margin: auto;
+    max-width: 1100px;
+}
+
+nav {
+        
+        width: 100%;
+        
+    }
+    
+
+    
+    nav h4 {
+        color: #333;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    
+    nav ul {
+        display: flex;
+        align-items: center;
+    }
+    
+    nav li {
+          margin-right: 2.6em;
+    }
+    
+    nav li a {
+        font-size: 1.05rem;
+        color: #333;
+        font-weight: 500;
+    }
+    
+    main {
+        margin: auto;
+        width: 100%;
+    }
+    
+    
+    main h4 {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }    
+    
+    .date-published {
+        margin: 3em 0;
+    }
+    
+    span {
+        font-size: 1rem;
+    }
+
+    main p {
+        margin: .5em 0;
+        font-size: 1.2rem;
+        line-height: 1.5em;
+    }
+    article {
+        margin: 5em 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+    section {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 10em;
+    }
+    
+    section iframe {
+        object-fit: cover;
+        width: 100%;
+    }
+
+	
+	
+	
+	img {
+		width: 100%;
+		
+	}
+	
+	.profile-images {
+		margin: auto;
+		width: 30%;
+		margin: 0 1em;
+	}
+	
+	.text-description {
+		width: 30%;
+	}
+	
+	.bio-photo {
+		padding: .15em;
+		border-radius: 50%;
+		border: 1px solid #ddd;
+	}
+	
+
+footer {
+	padding: 1.5em 0;
+}
+
+.sweet-note {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.social-media-links {
+	display: flex;
+}
+
+
+.facebook-icons {
+	width: 20px;
+}
+
+.icons {
+	margin-right: .5em;
+}
+	
+
+
+
+}

@@ -1,0 +1,106 @@
+
+@media (min-width: 320px) and (max-width: 720px) {
+    .main-hero {
+        width: 90%;
+        margin: auto;
+        font-size: 1rem;
+    }
+    .option-field {
+        flex-direction: column;
+    }
+    .purchase-option {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    .option-field .value-btn {
+        width: 50%;
+       
+    }
+    .option-field .download-btn {
+        margin-top: 10px;
+    }
+
+    .introduction-section {
+        margin: 0 auto;
+    }
+
+    .greetings-introduction {
+        padding: 5em 0;
+    }
+
+    .portal-wraper {
+        margin: auto;
+        flex-direction: column;
+    }
+
+    .portal-wraper .portals {
+        width: 90%;
+    }
+
+    .author-side {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .appcenter-preview {
+        margin: auto;
+        flex-direction: column;
+    }
+
+    .greetings-home {
+        padding: 5em 0;
+    }
+
+    .home-features-wraper {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    
+    .greetings-apps {
+        padding: 5em 0;
+    }
+
+    .parentals-preview {
+        flex-direction: column;
+    }
+
+    .open-source-features-wraper {
+        flex-direction: column;
+    }
+    .open-source-features-portals {
+        width: 100%;
+        margin: 2em auto;
+    
+    }
+
+    .shortcut-preview {
+        flex-direction: column;
+    
+    }
+
+    .greetings-privacy {
+        padding: 5em 0;
+    }
+
+    .privacy-features-wraper {
+        flex-direction: column;
+    }
+    .privacy-features-portals {
+        width: 100%;
+    }
+    
+    
+
+
+
+
+
+    .supporters {
+        display: none;
+    }
+}
