@@ -1,0 +1,38 @@
+
+@media (min-width: 320px) and (max-width: 1024px) {
+
+    
+    .container {
+        max-width: 100%;
+    }
+
+
+    .cta-header-title {
+        margin: 30px 0;
+        font-size: 3.2rem;
+    }
+
+
+    header nav ul {
+        display: none;
+    } 
+
+    .container .multi-section {
+        flex-direction: column;
+    }
+
+    .container .multi-section .dsc {
+        width: 100%;
+        padding: 10em;
+    }
+    .container .multi-section .ilt {
+        width: 100%;
+        padding: 0;
+    }
+
+        
+    .partner-section .property-group {
+        flex-direction: column;
+    }
+}
+

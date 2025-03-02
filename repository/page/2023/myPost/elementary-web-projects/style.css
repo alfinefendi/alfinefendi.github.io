@@ -151,6 +151,7 @@ nav li a {
     border: 2px solid rgba(255,255,255,1);
     outline: 1px solid rgba(0,0,0,.1);
     border-radius: 5px;
+    cursor: pointer;
 }
 
 
@@ -569,10 +570,13 @@ nav li a {
 
 /* supports  */
 
+
+
 .greetings-supports {
     width: 60%;
     margin: 2em auto;
     text-align: center;
+    padding: 1rem 0;
 }
 
 
@@ -590,19 +594,4 @@ nav li a {
 
 .logo-company {
     width: 150px;
-}
-
-
-.supporters {
-    margin: auto;
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.company-reviews {
-    width: 140px;
-    filter: grayscale(.5);
 }
