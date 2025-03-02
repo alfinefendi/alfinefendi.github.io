@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="authors" content="alfin efendi">
+        <meta name="keywords" content="alfin efendi, homepage, artikel">
+        <meta name="description" content="ini adalah beberapa hal yang saya pikirkan terkait apa dan bagaimana artikel pertama saya tertulis">
+        <title>Beginning</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
+          </style>
+        <link rel="stylesheet" href="olt.css">
+    </head>
+    <body>
+            <header class="container">
+                <nav>
+                   <div class="title">
+                    <h4><a href="../index.html">Homepage</a></h4>
+                    </div>
+                    <div class="nav-bar">
+                    <ul>
+                        <li><a href="../articles.html">Articles</a></li>
+                        <li><a href="../post.html">Post</a></li>
+                        <li><a href="../about.html">About</a></li>
+                    </ul>
+                    </div>
+                    <div class="menu">
+                        <div class="slash"></div>
+                        <div class="slash"></div>
+                        <div class="slash"></div>
+                    </div>
+                </nav>
+            </header>
+            <main class="container flex">
+                <article>
+
+
+                    <p>
+                        Rangkuman Belajar OLT ZTE C320
+
+
+1. meneruskan sinar cahaya dari olt ke onu/ont/modem
+
+conf t
+interface gpon-olt_1/1/1
+no shutdown
+
+2. membuat konfigurasi koneksi pppoe
+
+conf t
+interface gpon-olt_1/1/1
+no onu *
+exit
+
+interface gpon-olt_1/1/1
+onu 1 type ZTEG-F670 sn ZTEABCDE
+exit
+
+interface gpon-onu_1/1/1:1
+name alfin description bebas
+tcont 1 name INET profile 20Mbps
+gemport 1 name INET tcont 1
+service-port 1 vport 1 user-vlan 1945 vlan 1945
+exit
+
+pon-onu-mng gpon-onu_1/1/1:1
+service INET gemport 1 vlan 1945
+wan-ip 1 mode pppoe username alfin password alfin vlan-profile INET1945 host 1
+wan 1 service internet host 1
+end
+
+3. melihat daftar modem yang belum terkonfigurasi
+show gpon onu uncfg
+
+4. melihat laser / redaman pada sebuah perangkat modem
+show pon power attenuation gpon-onu_1/1/1:1
+
+5. melihat perangkat modem yang terkonfigurasi
+show run interface gpon-onu_1/1/1:1
+
+6. melihat perangkat modem, kira kira settingan aktif apa saja yang ada di dalamnya
+show onu running config gpon-onu_1/1/1:1
+
+7. melihat status port olt perangkat modem mana saja yang terhubung dengan olt
+show gpon onu state gpon-olt_1/1/1
+
+8. reboot perangkat modem
+conf t
+pon-onu-mng gpon-onu_1/1/1:1
+reboot
+
+9. reset pabrik ont
+conf t
+pon-onu-mng gpon-onu_1/1/1:1
+restore factory
+
+10. cek detail perangkat modem yang sudah dikonfigurasi
+show gpon onu detail-info gpon-onu_1/1/1:1
+
+11. menambahkan profil bandwidth kedalam olt
+conf t
+gpon
+prfile tcont 100Mbps type 4 maximum 30050
+profile traffic 100Mbps sir 300500 pir 30050
+
+12. menambahkan vlan kita sendiri kedalam olt
+conf t
+gpon
+onu profile vlan INET1945 tag-mode tag cvlan 1945
+exit
+interface gei_1/4/3
+switchport vlan 1945 tag
+
+13. menghapus profile vlan yang ada di dalam olt
+conf t
+gpon
+no onu profile vlan1945
+
+14. melihat ringkasan daftar vlan yang ada di olt
+show vlan summary
+
+15. membuat koneksi hotspot
+conf t
+interface gpon-olt_1/1/1
+no onu 1
+exit
+interface gpon-olt_1/1/1
+onu 1 type ZTEG-F670 sn ZTEABCDE
+exit
+interface gpon-onu_1/1/1:1
+name alfin_hotspotku description bebas
+tcont 1 name INET profile hostpot
+gemport 1 name INET tcont 1
+service-port 1 vport 1 user-vlan 1945 vlan 1945
+exit
+
+pon-onu-mng gpon-onu_1/1/1:1
+wan 1 service internet host 1
+service hostpot intenet gemport 1 vlan 1945
+vlan port wifi_0/1 mode tag vlan 1945
+ssid auth wep wifi_0/1 open-system
+end
+
+16. aktifkan fitur remote sesama local area network
+conf t
+pon-onu-mng gpon-onu_1/1/1:1
+security-mgmt 212 state enable mode forward ingress-type wan protocol web
+
+17. ganti nama ssid, password, tipe password dan port control setelah benar terkonfigurasi
+
+conf t
+pon-onu-mng gpon-onu_1/1/1:1
+
+
+ssid auth wep wifi_0/1 open-system (ssid 1 tanpa password)
+ssid auth wpa wifi_0/1 wpa-wpa2-psk key "12345678" (dengan password)
+ssid ctrl wifi_0/1 name wifiku.id (ganti nama ssid 1)
+interface wifi wifi_0/1 state lock (matikan ssid 1)
+interface wifi wifi_0/1 state unlock (nyalakan ssid 1)
+interface eth eth_0/1 state lock (matikan port lan 1)
+
+
+
+
+
+
+/* summary */
+conf t : adalah sebuah keyword untuk memasuki mode konfigurasi.
+
+show : segala jenis perintah show tidak mengharuskan kita untuk memasuki mode konfigurasi conf t
+
+pon-onu-mng : adalah keyword yang berhubungan dengan bagaiamana cara kita dapat memanagemen perangkat modem
+
+
+
+                                                            </p>
+
+                </article>
+                </div>
+            </main>
+
+            <footer class="container">
+                <nav>&copy; 2023 Alfin Efendi</nav>
+            </footer>
+            <script src="../../../js/page.js"></script>
+        </div>
+    </body>
+
+</html>
