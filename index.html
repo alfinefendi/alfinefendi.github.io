@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 
 <head>
     <!-- Google Tag Manager -->
-
-
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1F69B9ZET7"></script>
     <script>
@@ -19,7 +17,7 @@
     </script>
 
     <script>
-        (function(w, d, s, l, i) {
+        (function (w, d, s, l, i) {
             w[l] = w[l] || [];
             w[l].push({
                 'gtm.start': new Date().getTime(),
@@ -35,107 +33,159 @@
         })(window, document, 'script', 'dataLayer', 'GTM-PDCZRR92');
     </script>
     <!-- End Google Tag Manager -->
-
-
-
-
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="google-site-verification" content="pVuCDeHLYR5I1-YLJhc8ySyHEJVc8bVicndI2_2o_JY" />
     <meta name="author" content="alfin efendi">
-    <meta name="description"
-        content="blog personal berisi dokumentasi, catatan serta artikel ringan yang saya buat menggunakan statik file html, css dan javasccript">
+    <meta name="description" content="blog alfin efendi">
     <meta name="keywords" content="alfin efendi,alfinefendi,alfinefendi blog,alfin efendi website">
-    <title>Home</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./data/2025/repository/styles/text_style.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
     </style>
-    <link rel="stylesheet" href="/repository/css/home.css">
 </head>
 
-<body>
+<body class="xl:mx-auto xl:max-w-2/3 ">
+
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PDCZRR92" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <header class="container">
-        <nav>
-            <div class="title">
-                <h4><a href="" id="nav-recent">Homepage</a></h4>
-            </div>
 
-            <div class="nav-bar">
-                <ul>
-                    <li><a href="repository/page/2023/articles.html">Articles</a></li>
-                    <li><a href="repository/page/2023/post.html">Post</a></li>
-                    <li><a href="repository/page/2023/about.html">About</a></li>
-                    <li><a href="/repository/page/2024/index.html">| 2024</a></li>
-                </ul>
-            </div>
+    <!-- HEADER -->
 
-            <div class="menu">
-                <div class="slash"></div>
-                <div class="slash"></div>
-                <div class="slash"></div>
+    <!-- give easy navigation between pages -->
+
+    <section class="w-full bg-black text-white .pt-sans-bold">
+        <nav class="flex justify-between p-4">
+            <div>
+                <p class="headerPagePrimaryTextTitle">Bintang Penjelajah Studio</p>
             </div>
+            <ul class="flex gap-2">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+            </ul>
         </nav>
-    </header>
+    </section>
 
-    <main class="container flex">
-        <div class="profile">
-            <img src="repository/image/myself.jpg" alt="alfin efendi" class="bio-photo">
-            <h4>&mdash; Alfin Efendi.</h4>
+    <!--  CONTENT -->
+
+    <!-- 1. to inform the visitor that im is developer right now -->
+    <!-- 2. to inform the visitor what i did, and what i can do it  -->
+    <!-- 3. to inform the visitor about my mission  -->
+
+    <section class="w-full text-white pt-sans-regular">
+        <div class="p-4 relative flex flex-col gap-4 justify-start">
+            <div class="flex flex-col  justify-start gap-4">
+                <!-- introduction -->
+                <div>
+                    <div>
+                        <h4 class="contentBodySecondaryTextTitle text-black">Introduction</h4>
+                    </div>
+
+                    <div class="cardQuoteSecondaryTextTitle text-gray-700 pt-sans-regular">
+                        <div>
+                            <p>Halo perkenalkan saya adalah seorang developer pengembang web dan mobile</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- profile card -->
+                <div class="w-50 p-4 bg-black rounded-lg lg:absolute lg:right-5 lg:top-5">
+                    <div class="flex gap-2">
+                        <img class="size-30 rounded-lg" src="./data/2025/repository/image/hollow.png"
+                            alt="hollow images">
+                        <div class="flex flex-col gap-2">
+                            <div class="size-10 bg-neutral-700 rounded-lg"></div>
+                            <div class="size-10 bg-neutral-700 rounded-lg"></div>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <p class="cardPrimaryTextTitle">Alfin Efendi</p>
+                        <p class="cardSecondaryTextTitle">Saat Ini Berusia 23 Tahun Dan Passionate Untuk Aktif
+                            Mengembangkan Aplikasi Web
+                            & Mobile Android
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="xl:h-screen flex flex-col gap-2">
+
+                <!-- project -->
+                <div class="text-black contentBodySecondaryTextTitle">
+                    <h4>Projek Saya</h4>
+                </div>
+                <div class="flex gap-2 flex-col sm:flex-row sm:flex-wrap md:w-1/2 text-black cardSecondaryTextTitle">
+                    <div class="bg-gray-50 sm:size-40 md:size-42 p-4 border rounded-lg">
+                        <p>Experimental Apps</p>
+                        <p>Berbagai jenis aplikasi, ektensi, serta website yang masih tahap eksperimen atau coba coba
+                        </p>
+                        <p>Private</p>
+                        <p>In Development</p>
+                    </div>
+                    <div class="bg-gray-50 sm:size-40 md:size-42 p-4 border rounded-lg">
+                        <p>Web Absensi Eksklusif</p>
+                        <p>Web absensi untuk karyawan PT Tridata</p>
+                        <p>Private</p>
+                        <p>Released</p>
+                    </div>
+                    <div class="bg-gray-50 sm:size-40 md:size-42 p-4 border rounded-lg">
+                        <p>Web Pencatatan Barang Eksklusif</p>
+                        <p>Web pencatatan barang untuk bagian gudang PT Tridata</p>
+                        <p>Private</p>
+                        <p>Released</p>
+                    </div>
+                    <div class="bg-gray-50 sm:size-40 md:size-42 p-4 border rounded-lg">
+                        <p>Aplikasi Nara Type</p>
+                        <p>Aplikasi mobile untuk catatan sehari hari, seperti halnya notepad</p>
+                        <p>Public</p>
+                        <p>In Development</p>
+                    </div>
+                    <div class="bg-gray-50 sm:size-40 md:size-42 p-4 border rounded-lg">
+                        <p>Aplikasi Pengeluaran Bulanan</p>
+                        <p>Aplikasi mobile untuk tulis murni pengeluaran</p>
+                        <p>Public</p>
+                        <p>In Development</p>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <article>
-
-
-            <p>Akhirnya, saya dapat membuat laman web milik saya sendiri</p>
-            <p>Rasanya sudah cukup menyenangkan apabila laman web ini muncul di penelusuran search engine</p>
+    </section>
 
 
-        </article>
+    <!-- FOOTER -->
 
-        <article>
-
-            <section>
-                <div class="recent-post">
-                    <h3><a href="repository/page/2024/index.html">Perjalanan Saat Ini.</a></h3>
-                    <p><span>17 Agustus 2024</span> &mdash; ini adalah karangan absurd. tentang perjalan selama 1 tahun,
-                        hingga rasanya ingin minta tolong.</p>
+    <!-- to inform the visitor contact information such as email, number phone, or location -->
+    <section class="w-full bg-black text-white pt-sans-regular">
+        <footer class="p-4">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="footerPagePrimaryTextTitle">
+                    <p>Bintang Penjelajah Studio</p>
+                    <div class="w-72 flex gap-2 flex-wrap cardSecondaryTextTitle">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore cum reprehenderit dolor,
+                            qui
+                            laudantium quia ipsam quibusdam ipsum esse ea optio, maiores corrupti hic harum.</p>
+                    </div>
                 </div>
-                <div class="recent-post">
-                    <h3><a href="repository/page/2023/myArticles/beginning.html">Postingan Pertama, Halo.</a></h3>
-                    <p><span>24 Agustus 2023</span> &mdash; ini adalah postingan pertama saya di internet. saya
-                        berencana untuk membuat home page sederhana ini mempunyai fungsi entah itu seperti web
-                        informasi, web lowongan kerja, dan atau semacamnya</p>
+                <div>
+                    <div class="mt-1">
+                        <p class="footerInfoPrimaryTextTitle">Alamat Surel</p>
+                        <p class="footerInfoSecondaryTextTitle">alpinpe15b@gmail.com</p>
+                    </div>
+                    <div class="mt-1">
+                        <p class="footerInfoPrimaryTextTitle">Nomor Telepon</p>
+                        <p class="footerInfoSecondaryTextTitle">+62 851-3475-0964</p>
+                    </div>
+                    <div class="mt-1">
+                        <p class="footerInfoPrimaryTextTitle">Google Play Developer</p>
+                        <p class="footerInfoSecondaryTextTitle">Bintang Penjelajah Studio</p>
+                    </div>
                 </div>
-                <div class="recent-post">
-                    <h3><a href="repository/page/2023/myArticles/tutor.html">Belajar Bikin Poster Bersama.</a></h3>
-                    <p><span>6 September 2023</span> &mdash; yang saat ini masih belum bisa bikin poster atau digital
-                        art pada umumnya saya bisa bantu ajarkan sampai kamu benar - benar bisa dan dapat membuat poster
-                        milikmu sendiri.</p>
-                </div>
-
-                <div class="recent-post">
-                    <h3><a href="repository/page/2023/myArticles/cerita.html">Cerita Urun Dana Beberapa Tahun Lalu.</a></h3>
-                    <p><span>29 Agustus 2023</span> &mdash; beberapa waktu yang lalu saya membuat grup baru bersama
-                        teman - teman untuk memulai usaha berbasis sistem urun dana, saya sebagai pengelola dan kawan -
-                        kawan yang memberikan dana untuk di kelola</p>
-                </div>
-            </section>
-
-        </article>
-    </main>
-
-    <footer class="container">
-        <nav>
-            <p>&copy; 2023 Alfin Efendi</p>
-        </nav>
-    </footer>
-    </div>
-    <script src="repository/js/page.js"></script>
+            </div>
+        </footer>
+    </section>
 </body>
 
 </html>

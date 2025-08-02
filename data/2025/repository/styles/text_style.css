@@ -1,0 +1,100 @@
+* {
+    line-height: normal;
+}
+
+.pt-sans-regular {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.pt-sans-bold {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.pt-sans-regular-italic {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.pt-sans-bold-italic {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+/* Page is outer side from all element */
+
+.rootPagePrimaryTextTitle {
+    font-size: 5rem;
+}
+
+.rootPageSecondaryTextTitle {
+    font-size: 3rem;
+}
+
+
+/* Page is outer side from all element */
+
+.headerPagePrimaryTextTitle {
+    font-size: 1.5rem;
+}
+
+.headerPageSecondaryTextTitle {
+    font-size: .75rem;
+}
+
+/* ContentBody is mainly center scope */
+
+.contentBodyPrimaryTextTitle {
+    font-size: 3rem;
+}
+
+.contentBodySecondaryTextTitle {
+    font-size: 1.5rem;
+}
+
+/* cardQuote is quote the person or entity say or inform about things */
+
+.cardQuotePrimaryTextTitle {
+    font-size: .9rem;
+}
+
+.cardQuoteSecondaryTextTitle {
+    font-size: .75rem;
+}
+
+/* Card is literally part of the content item */
+
+.cardPrimaryTextTitle {
+    font-size: 1.5rem;
+}
+
+.cardSecondaryTextTitle {
+    font-size: .75rem;
+}
+
+
+/* FooterPage is main layout in footer scope */
+
+.footerPagePrimaryTextTitle {
+    font-size: 2rem;
+}
+
+.footerPageSecondaryTextTitle {
+    font-size: 1rem;
+}
+
+/* FooterInformation is mainly info in footer layout */
+
+.footerInfoPrimaryTextTitle {
+    font-size: 1rem;
+}
+
+.footerInfoSecondaryTextTitle {
+    font-size: .75rem;
+}
